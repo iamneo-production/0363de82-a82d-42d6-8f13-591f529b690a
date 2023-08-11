@@ -1,0 +1,19 @@
+{
+  "cities": [
+    {
+      "id": 1,
+      "city": "New York",
+      "timezone": ""
+    },
+    {
+      "id": 1,
+      "city": "Hyderabad",
+      "timezone": ""
+    },
+    {
+      "id": 1,
+      "city": "Beijing",
+      "timezone": ""
+    }
+  ] 
+}
