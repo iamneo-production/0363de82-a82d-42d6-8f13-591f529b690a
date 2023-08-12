@@ -1,0 +1,254 @@
+React Application Usecase_for_World Clock
+
+cat /proc/sys/fs/inotify/max_user_watches
+fs.inotify.max_user_watches=524288
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
+Use Case Overview: 
+
+The World Clock React application allows users to view the current time of different cities across the world. Users can add multiple cities to the clock display and see the current time in each city simultaneously. 
+
+
+
+Personas Involved:
+
+User: The end-user of the application who wants to view the current time of various cities. 
+Admin: The system administrator is responsible for managing the list of cities and their time zones. 
+
+
+Flow of Events:
+
+User opens the World Clock React application. 
+The application displays a list of pre-selected cities with their current times. 
+User has the option to add new cities to the clock display. 
+User can remove cities from the clock display if desired. 
+The application updates the time for each city automatically. 
+
+
+Alternate Flow: 
+
+If a city entered by the user does not exist or has an invalid time zone, the application will show an error message and prompt the user to enter a valid city. 
+
+
+Post Conditions: 
+
+The application displays the current time for each selected city accurately. 
+Users can add and remove cities from the clock display. 
+The application keeps updating the time for each city automatically. 
+
+
+JSON Mock RESTful: 
+
+URL: GET /api/cities 
+
+Description: Retrieves a list of pre-selected cities and their time zones. 
+
+ 
+
+URL: POST /api/cities 
+
+Description: Adds a new city with its time zone to the list. 
+
+ 
+
+URL: DELETE /api/cities/:id 
+
+Description: Removes a city from the list by its unique identifier. 
+
+ 
+
+URL: GET /api/time/:id 
+
+Description: Retrieves the current time of a specific city by its identifier. 
+
+ 
+
+URL: PUT /api/cities/:id 
+
+Description: Updates the time zone of an existing city by its identifier. 
+
+
+
+Technical Outcome Conditions: 
+
+Unit Testing Code 
+Mock REST API (ex JSON-Server) for any API requirement 
+Minimum of 5 Web Components (Screens) to be developed. 
+Implementation of basic security authentication w public/protected and private route 
+Minimum of 3 functional hooks 
+Intra Component communication 
+Responsive design 
+Adaptation of Material UI / React Strap
+
+
+
+
+Edit Code
+
+It seems like you've just greeted me with a "hey". Is there something specific you need help with? Please provide more details or let me know what you're looking for so that I can assist you better.
+
+If you have any questions or need assistance with a particular task, feel free to provide more information and I'll do my best to help you out.
+
+React Application Usecase_for_World Clock Use Case Overview: The World Clock React application allows users to view the current time of different cities across the world. Users can add multiple cities to the clock display and see the current time in each city simultaneously. Personas Involved: User: The end-user of the application who wants to view the current time of various cities. Admin: The system administrator is responsible for managing the list of cities and their time zones. Flow of Events: User opens the World Clock React application. The application displays a list of pre-selected cities with their current times. User has the option to add new cities to the clock display. User can remove cities from the clock display if desired. The application updates the time for each city automatically. Alternate Flow: If a city entered by the user does not exist or has an invalid time zone, the application will show an error message and prompt the user to enter a valid city. Post Conditions: The application displays the current time for each selected city accurately. Users can add and remove cities from the clock display. The application keeps updating the time for each city automatically. JSON Mock RESTful: URL: GET /api/cities Description: Retrieves a list of pre-selected cities and their time zones. URL: POST /api/cities Description: Adds a new city with its time zone to the list. URL: DELETE /api/cities/:id Description: Removes a city from the list by its unique identifier. URL: GET /api/time/:id Description: Retrieves the current time of a specific city by its identifier. URL: PUT /api/cities/:id Description: Updates the time zone of an existing city by its identifier. Technical Outcome Conditions: Unit Testing Code Mock REST API (ex JSON-Server) for any API requirement Minimum of 5 Web Components (Screens) to be developed. Implementation of basic security authentication w public/protected and private route Minimum of 3 functional hooks Intra Component communication Responsive design Adaptation of Material UI / React Strap
+World Clock React Application Documentation
+
+Introduction: The World Clock React application is designed to allow users to view the current time of different cities across the world. This documentation will provide an overview of the application's use case, personas involved, flow of events, alternate flow, post conditions, and technical outcome conditions.
+
+Use Case Overview: The World Clock React application enables users to add multiple cities to the clock display and see the current time in each city simultaneously. This feature is particularly useful for users who want to keep track of time in different time zones or plan activities across different cities.
+
+Personas Involved:
+
+User: The end-user of the application who wants to view the current time of various cities.
+Admin: The system administrator responsible for managing the list of cities and their time zones.
+Flow of Events:
+
+User opens the World Clock React application.
+The application displays a list of pre-selected cities with their current times.
+User has the option to add new cities to the clock display.
+User can remove cities from the clock display if desired.
+The application updates the time for each city automatically.
+Alternate Flow: If a city entered by the user does not exist or has an invalid time zone, the application will show an error message and prompt the user to enter a valid city.
+
+Post Conditions:
+
+The application displays the current time for each selected city accurately.
+Users can add and remove cities from the clock display.
+The application keeps updating the time for each city automatically.
+JSON Mock RESTful: The World Clock React application utilizes a JSON Mock RESTful API to retrieve and manage city data. The following API endpoints are available:
+
+GET /api/cities: Retrieves a list of pre-selected cities and their time zones.
+POST /api/cities: Adds a new city with its time zone to the list.
+DELETE /api/cities/:id: Removes a city from the list by its unique identifier.
+GET /api/time/:id: Retrieves the current time of a specific city by its identifier.
+PUT /api/cities/:id: Updates the time zone of an existing city by its identifier.
+Technical Outcome Conditions: To meet the technical outcome conditions, the World Clock React application must fulfill the following requirements:
+
+Unit Testing Code: The application should have comprehensive unit tests to ensure the correctness of its functionality.
+Mock REST API: A mock REST API, such as JSON-Server, should be implemented to fulfill any API requirements.
+Web Components: A minimum of 5 web components (screens) should be developed to provide a rich user experience.
+Security Authentication: Basic security authentication should be implemented, including public, protected, and private routes.
+Functional Hooks: A minimum of 3 functional hooks should be utilized to enhance the application's functionality.
+Intra Component Communication: The application should support communication between components to enable seamless data flow.
+Responsive Design: The application should be designed to be responsive and adapt to different screen sizes and devices.
+Material UI / React Strap: The application should incorporate Material UI or React Strap for a visually appealing and consistent design.
+Conclusion: The World Clock React application provides users with the ability to view the current time of different cities across the world. By following the outlined use case, personas involved, flow of events, and technical outcome conditions, developers can create a robust and user-friendly application that meets the requirements of the project.
+
+elaborate
+World Clock React Application - Elaboration
+
+Thank you for providing the use case and technical requirements for the World Clock React application. In this section, we will elaborate on the different aspects of the application and provide further details on how to implement them.
+
+Unit Testing Code: To ensure the correctness of the application's functionality, it is essential to have comprehensive unit tests. Unit tests help identify and fix bugs early in the development process. Here is an example of how unit tests can be implemented using the Jest testing framework:
+import { render, screen } from '@testing-library/react';
+import App from './App';
+
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
+});
+Mock REST API: To fulfill the API requirements, you can use JSON-Server to create a mock REST API. JSON-Server allows you to quickly set up a mock server with predefined routes and responses. Here is an example of how to set up a mock server using JSON-Server:
+# Install JSON-Server globally
+npm install -g json-server
+
+# Create a JSON file with the desired data
+# For example, cities.json
+{
+  "cities": [
+    { "id": 1, "name": "New York", "timezone": "America/New_York" },
+    { "id": 2, "name": "London", "timezone": "Europe/London" }
+  ]
+}
+
+
+# Start the JSON-Server with the JSON file
+json-server --watch cities.json
+Web Components: To provide a rich user experience, you can develop multiple web components (screens) for the World Clock React application. These components can include features such as adding new cities, removing cities, and displaying the current time for each city. Here is an example of how to create a basic component in React:
+import React from 'react';
+
+const CityCard = ({ city }) => {
+  return (
+    <div className="city-card">
+      <h2>{city.name}</h2>
+      <p>Current Time: {city.time}</p>
+    </div>
+  );
+};
+
+export default CityCard;
+Security Authentication: To implement basic security authentication, you can use a library like React Router to define public, protected, and private routes. Public routes can be accessed by anyone, protected routes require authentication, and private routes are only accessible to authorized users. Here is an example of how to define protected and private routes using React Router:
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
+
+const PrivateRoute = ({ component: Component, ...rest }) => {
+  const isAuthenticated = // Check if the user is authenticated
+
+  return (
+    <Route
+      {...rest}
+      render={(props) =>
+        isAuthenticated ? (
+          <Component {...props} />
+        ) : (
+          <Redirect to="/login" />
+        )
+      }
+    />
+  );
+};
+
+const App = () => {
+  return (
+    <Router>
+      <Route path="/login" component={Login} />
+      <PrivateRoute path="/dashboard" component={Dashboard} />
+    </Router>
+  );
+};
+Functional Hooks: Functional hooks can be used to enhance the application's functionality. Hooks like useState, useEffect, and useContext can be utilized to manage state, handle side effects, and share data between components. Here is an example of how to use the useState hook to manage state in a component:
+import React, { useState } from 'react';
+
+const Counter = () => {
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={increment}>Increment</button>
+    </div>
+  );
+};
+
+export default Counter;
+Intra Component Communication: To enable seamless data flow between components, you can use techniques like prop drilling, context API, or state management libraries like Redux. These approaches allow components to communicate and share data without passing props through multiple levels of the component tree. Here is an example of how to use the context API to share data between components:
+import React, { createContext, useContext } from 'react';
+
+const CityContext = createContext();
+
+const CityProvider = ({ children }) => {
+  const cities = // Fetch cities from the API
+
+  return (
+    <CityContext.Provider value={cities}>
+      {children}
+    </CityContext.Provider>
+  );
+};
+
+const CityList = () => {
+  const cities = useContext(CityContext);
+
+  return (
+    <div>
+      {cities.map((city) => (
+        <CityCard key={city.id} city={city} />
+      ))}
+    </div>
+  );
+};
+
+export default CityList;
+

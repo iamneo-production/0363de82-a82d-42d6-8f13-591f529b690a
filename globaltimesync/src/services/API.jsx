@@ -1,29 +1,38 @@
-import React, { useState,useEffect } from 'react';
 import axios from "axios";
 
-function API{
-    const url = "https://localhost:3001";
+const url = "https://localhost:8080";
 
-    const cityService = {
-         getCities : async () => {
-            try {
-                const response = await axios.get(`${url}/cities`);
-                return response.data;
-
-            }
-            catch(error){
-                console.error('error fecthing cities',error);
-            }
+const cityService = {
+    getCities: async () => {
+        try {
+            const response = await axios.get(`${url}/cities`);
+            return response.data;
+        } catch (error) {
+            console.error('error fetching cities', error);
             throw error;
-
         }
-    };
-
-    addCity : async () => {
-        try{
-            const response = axios.post(`${url}/cities/:id`)
+    },
+    addCity: async (city) => {
+        try {
+            const response = await axios.post(`${url}/cities/`, city);
+            return response.data;
+        } catch (error) {
+            console.error('error adding city', error);
+            throw error;
         }
-    };
+    },
 
+    deleteCity: async (cityId) => {
+        try {
+            const response = await axios.delete(`${url}/cities/${cityId}`);
+            return response.data;
+        } catch (error) {
+            console.error('error deleting city', error);
+            throw error;
+        }
+    }
+    
 
-}
+};
+
+export default cityService;
