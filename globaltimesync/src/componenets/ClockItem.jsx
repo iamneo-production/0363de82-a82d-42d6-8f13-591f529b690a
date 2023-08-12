@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import moment from 'moment-timezone';
+import { useCityContext } from './contextapi/CityProvider';
 
 function ClockItem({ city, removeCity }) {
   const [currentTime, setCurrentTime] = useState('');
+  //const { cities, setCities } = useCityContext();
+  console.log('ClockItem rendering with cities:', city);
 
   // UseEffect hook sets up recurring interval to update current time every second.
   // Library used: moment-timezone

@@ -1,33 +1,24 @@
 import './App.css';
-import React, { useState } from 'react';
-import ClockList from './componenets/ClockList';
-import AddCityForm from './componenets/AddCityForm';
+import Home from './componenets/Home';
+import { Route, Routes } from 'react-router-dom';
+import AdminLogin from './componenets/AdminLogin';
+import SystemAdminPage from './componenets/SystemAdminPage';
+import { CityProvider } from './componenets/contextapi/CityProvider';
 
 function App() {
-  const [cities, setCities] = useState([
-    { id: 1, name: 'New York', timezone: 'America/New_York' },
-    { id: 2, name: 'London', timezone: 'Europe/London' },
-    // We can add more initial cities here
-  ]);
-
-  //Adding City By updating state.
-  const addCity = (city) => {
-    setCities([...cities, city]);
-  };
-
-  //removing the city based on cityId param which filters out the city with the specified cityId
-  const removeCity = (cityId) => {
-    setCities(cities.filter(city => city.id !== cityId));
-  };
-
+  
   return (
+    
     <div className="App">
-      <h1>World Clock</h1>
-      <ClockList cities={cities} removeCity={removeCity} />
-      <AddCityForm addCity={addCity} />
+      <CityProvider>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="admin-login" element={<AdminLogin/>}/>
+        <Route path="system-admin" element={<SystemAdminPage/>}/>
+      </Routes>
+      </CityProvider>
     </div>
   );
 }
 
 export default App;
-
