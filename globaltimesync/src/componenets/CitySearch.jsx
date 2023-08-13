@@ -81,7 +81,7 @@ function CitySearch({ addCity }) {
             </button>
           </div>
         </div>
-        <h2>Added Cities</h2>
+        {/* <h2>Added Cities</h2>
         <ul className="list-group">
           {newCities.map((city) => (
             <li key={city.id} className="list-group-item">
@@ -89,7 +89,7 @@ function CitySearch({ addCity }) {
               {city.timezone}
             </li>
           ))}
-        </ul>
+        </ul> */}
       </div>
     </>
   );

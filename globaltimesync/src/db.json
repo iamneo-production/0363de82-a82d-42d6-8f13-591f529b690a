@@ -33,6 +33,241 @@
   ],
   "cities": [
     {
+      "id": 0,
+      "name": "Abidjan",
+      "timezone": "Africa/Abidjan"
+    },
+    {
+      "id": 1,
+      "name": "Accra",
+      "timezone": "Africa/Accra"
+    },
+    {
+      "id": 2,
+      "name": "Addis_Ababa",
+      "timezone": "Africa/Addis_Ababa"
+    },
+    {
+      "id": 3,
+      "name": "Algiers",
+      "timezone": "Africa/Algiers"
+    },
+    {
+      "id": 4,
+      "name": "Asmara",
+      "timezone": "Africa/Asmara"
+    },
+    {
+      "id": 5,
+      "name": "Asmera",
+      "timezone": "Africa/Asmera"
+    },
+    {
+      "id": 6,
+      "name": "Bamako",
+      "timezone": "Africa/Bamako"
+    },
+    {
+      "id": 7,
+      "name": "Bangui",
+      "timezone": "Africa/Bangui"
+    },
+    {
+      "id": 8,
+      "name": "Banjul",
+      "timezone": "Africa/Banjul"
+    },
+    {
+      "id": 9,
+      "name": "Bissau",
+      "timezone": "Africa/Bissau"
+    },
+    {
+      "id": 10,
+      "name": "Blantyre",
+      "timezone": "Africa/Blantyre"
+    },
+    {
+      "id": 11,
+      "name": "Brazzaville",
+      "timezone": "Africa/Brazzaville"
+    },
+    {
+      "id": 12,
+      "name": "Bujumbura",
+      "timezone": "Africa/Bujumbura"
+    },
+    {
+      "id": 13,
+      "name": "Cairo",
+      "timezone": "Africa/Cairo"
+    },
+    {
+      "id": 14,
+      "name": "Casablanca",
+      "timezone": "Africa/Casablanca"
+    },
+    {
+      "id": 15,
+      "name": "Ceuta",
+      "timezone": "Africa/Ceuta"
+    },
+    {
+      "id": 16,
+      "name": "Conakry",
+      "timezone": "Africa/Conakry"
+    },
+    {
+      "id": 17,
+      "name": "Dakar",
+      "timezone": "Africa/Dakar"
+    },
+    {
+      "id": 18,
+      "name": "Dar_es_Salaam",
+      "timezone": "Africa/Dar_es_Salaam"
+    },
+    {
+      "id": 19,
+      "name": "Djibouti",
+      "timezone": "Africa/Djibouti"
+    },
+    {
+      "id": 20,
+      "name": "Douala",
+      "timezone": "Africa/Douala"
+    },
+    {
+      "id": 21,
+      "name": "El_Aaiun",
+      "timezone": "Africa/El_Aaiun"
+    },
+    {
+      "id": 22,
+      "name": "Freetown",
+      "timezone": "Africa/Freetown"
+    },
+    {
+      "id": 23,
+      "name": "Gaborone",
+      "timezone": "Africa/Gaborone"
+    },
+    {
+      "id": 24,
+      "name": "Harare",
+      "timezone": "Africa/Harare"
+    },
+    {
+      "id": 25,
+      "name": "Johannesburg",
+      "timezone": "Africa/Johannesburg"
+    },
+    {
+      "id": 26,
+      "name": "Juba",
+      "timezone": "Africa/Juba"
+    },
+    {
+      "id": 27,
+      "name": "Kampala",
+      "timezone": "Africa/Kampala"
+    },
+    {
+      "id": 28,
+      "name": "Khartoum",
+      "timezone": "Africa/Khartoum"
+    },
+    {
+      "id": 29,
+      "name": "Kigali",
+      "timezone": "Africa/Kigali"
+    },
+    {
+      "id": 30,
+      "name": "Kinshasa",
+      "timezone": "Africa/Kinshasa"
+    },
+    {
+      "id": 31,
+      "name": "Lagos",
+      "timezone": "Africa/Lagos"
+    },
+    {
+      "id": 32,
+      "name": "Libreville",
+      "timezone": "Africa/Libreville"
+    },
+    {
+      "id": 33,
+      "name": "Lome",
+      "timezone": "Africa/Lome"
+    },
+    {
+      "id": 34,
+      "name": "Luanda",
+      "timezone": "Africa/Luanda"
+    },
+    {
+      "id": 35,
+      "name": "Lubumbashi",
+      "timezone": "Africa/Lubumbashi"
+    },
+    {
+      "id": 36,
+      "name": "Lusaka",
+      "timezone": "Africa/Lusaka"
+    },
+    {
+      "id": 37,
+      "name": "Malabo",
+      "timezone": "Africa/Malabo"
+    },
+    {
+      "id": 38,
+      "name": "Maputo",
+      "timezone": "Africa/Maputo"
+    },
+    {
+      "id": 39,
+      "name": "Maseru",
+      "timezone": "Africa/Maseru"
+    },
+    {
+      "id": 40,
+      "name": "Mbabane",
+      "timezone": "Africa/Mbabane"
+    },
+    {
+      "id": 41,
+      "name": "Mogadishu",
+      "timezone": "Africa/Mogadishu"
+    },
+    {
+      "id": 42,
+      "name": "Monrovia",
+      "timezone": "Africa/Monrovia"
+    },
+    {
+      "id": 43,
+      "name": "Nairobi",
+      "timezone": "Africa/Nairobi"
+    },
+    {
+      "id": 44,
+      "name": "Ndjamena",
+      "timezone": "Africa/Ndjamena"
+    },
+    {
+      "id": 45,
+      "name": "Niamey",
+      "timezone": "Africa/Niamey"
+    },
+    {
+      "id": 46,
+      "name": "Nouakchott",
+      "timezone": "Africa/Nouakchott"
+    },
+    {
       "id": 47,
       "name": "Ouagadougou",
       "timezone": "Africa/Ouagadougou"
@@ -291,6 +526,26 @@
       "id": 98,
       "name": "Costa_Rica",
       "timezone": "America/Costa_Rica"
+    },
+    {
+      "id": 99,
+      "name": "Creston",
+      "timezone": "America/Creston"
+    },
+    {
+      "id": 100,
+      "name": "Cuiaba",
+      "timezone": "America/Cuiaba"
+    },
+    {
+      "id": 101,
+      "name": "Curacao",
+      "timezone": "America/Curacao"
+    },
+    {
+      "id": 102,
+      "name": "Danmarkshavn",
+      "timezone": "America/Danmarkshavn"
     },
     {
       "id": 103,
@@ -1681,6 +1936,11 @@
       "timezone": "Canada/Pacific"
     },
     {
+      "id": 381,
+      "name": "Saskatchewan",
+      "timezone": "Canada/Saskatchewan"
+    },
+    {
       "id": 382,
       "name": "Yukon",
       "timezone": "Canada/Yukon"
@@ -1893,6 +2153,11 @@
       "id": 425,
       "name": "Zulu",
       "timezone": "Etc/Zulu"
+    },
+    {
+      "id": 426,
+      "name": "Amsterdam",
+      "timezone": "Europe/Amsterdam"
     },
     {
       "id": 427,
@@ -2305,6 +2570,42 @@
       "timezone": "Indian/Reunion"
     },
     {
+      "id": 511,
+      "timezone": "Iran"
+    },
+    {
+      "id": 512,
+      "timezone": "Israel"
+    },
+    {
+      "id": 513,
+      "timezone": "Jamaica"
+    },
+    {
+      "id": 514,
+      "timezone": "Japan"
+    },
+    {
+      "id": 515,
+      "timezone": "Kwajalein"
+    },
+    {
+      "id": 516,
+      "timezone": "Libya"
+    },
+    {
+      "id": 517,
+      "timezone": "MET"
+    },
+    {
+      "id": 518,
+      "timezone": "MST"
+    },
+    {
+      "id": 519,
+      "timezone": "MST7MDT"
+    },
+    {
       "id": 520,
       "name": "BajaNorte",
       "timezone": "Mexico/BajaNorte"
@@ -2318,6 +2619,26 @@
       "id": 522,
       "name": "General",
       "timezone": "Mexico/General"
+    },
+    {
+      "id": 523,
+      "timezone": "NZ"
+    },
+    {
+      "id": 524,
+      "timezone": "NZ-CHAT"
+    },
+    {
+      "id": 525,
+      "timezone": "Navajo"
+    },
+    {
+      "id": 526,
+      "timezone": "PRC"
+    },
+    {
+      "id": 527,
+      "timezone": "PST8PDT"
     },
     {
       "id": 528,
@@ -2535,6 +2856,39 @@
       "timezone": "Pacific/Wallis"
     },
     {
+      "id": 571,
+      "name": "Yap",
+      "timezone": "Pacific/Yap"
+    },
+    {
+      "id": 572,
+      "timezone": "Poland"
+    },
+    {
+      "id": 573,
+      "timezone": "Portugal"
+    },
+    {
+      "id": 574,
+      "timezone": "ROC"
+    },
+    {
+      "id": 575,
+      "timezone": "ROK"
+    },
+    {
+      "id": 576,
+      "timezone": "Singapore"
+    },
+    {
+      "id": 577,
+      "timezone": "Turkey"
+    },
+    {
+      "id": 578,
+      "timezone": "UCT"
+    },
+    {
       "id": 579,
       "name": "Alaska",
       "timezone": "US/Alaska"
@@ -2593,6 +2947,26 @@
       "id": 590,
       "name": "Samoa",
       "timezone": "US/Samoa"
+    },
+    {
+      "id": 591,
+      "timezone": "UTC"
+    },
+    {
+      "id": 592,
+      "timezone": "Universal"
+    },
+    {
+      "id": 593,
+      "timezone": "W-SU"
+    },
+    {
+      "id": 594,
+      "timezone": "WET"
+    },
+    {
+      "id": 595,
+      "timezone": "Zulu"
     }
   ],
   "cities2": [

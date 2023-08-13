@@ -59,7 +59,7 @@ const CityDashboard = ({ apiUrl }) => {
       <h1>City Dashboard</h1>
       <CitySearch addCity={handleAddCity} />
 
-      <div className="mb-3">
+      {/* <div className="mb-3">
         <label htmlFor="newCityName" className="form-label">
           City Name
         </label>
@@ -85,7 +85,7 @@ const CityDashboard = ({ apiUrl }) => {
       </div>
       <button className="btn btn-primary" onClick={handleAddCity}>
         Add City
-      </button>
+      </button> */}
       <table className="table">
         <thead>
           <tr>
