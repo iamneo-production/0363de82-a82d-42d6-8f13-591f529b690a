@@ -4,6 +4,8 @@ import ClockList from './ClockList';
 import AddCityForm from './AddCityForm';
 import { useNavigate } from 'react-router-dom';
 import { useCityContext } from './contextapi/CityProvider';
+import cityService from '../../src/services/API';
+import SelectInput from './SelectInput';
 
 function Home() {
   //const { cities, setCities } = useCityContext();
@@ -17,11 +19,14 @@ function Home() {
   //Adding City By updating state.
   const addCity = (city) => {
     setCities([...cities, city]);
+    console.log(cityService.addCity(city));
   };
 
   //removing the city based on cityId param which filters out the city with the specified cityId
   const removeCity = (cityId) => {
     setCities(cities.filter(city => city.id !== cityId));
+    console.log(cityService.deleteCity(cityId));
+    console.log(cityId);
   };
 
   const navigate = useNavigate();
@@ -30,12 +35,15 @@ function Home() {
     navigate("admin-login");
   }
 
+  
+
   return (
     <div className="App">
       <h1>World Clock</h1>
       <ClockList cities={cities} removeCity={removeCity} />
       <AddCityForm addCity={addCity} />
       <button onClick={handleAdminLogin}>Login to Admin</button>
+      {/* <SelectInput/> */}
     </div>
   );
 }
