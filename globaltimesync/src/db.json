@@ -1,4 +1,25 @@
 {
+  "api": {
+    "cities": [
+      {
+        "id": 3,
+        "name": "Addis_Ababa",
+        "timezone": "Africa/Addis_Ababa"
+      },
+      {
+        "id": 4,
+        "name": "Algiers",
+        "timezone": "Africa/Algiers"
+      },
+      {
+        "id": 5,
+        "name": "Asmara",
+        "timezone": "Africa/Asmara"
+      }
+    ]
+  }
+
+,
   "cities": [
     {
       "id": 3,
