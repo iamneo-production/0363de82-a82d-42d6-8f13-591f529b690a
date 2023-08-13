@@ -17,6 +17,7 @@ function Home() {
       try {
         const response = await cityService.getUserData();
         setCities(response);
+        console.log(response,"response from ");
       } catch (error) {
         console.error(error);
       }
