@@ -43,7 +43,7 @@ function Home() {
       <ClockList cities={cities} removeCity={removeCity} />
       <AddCityForm addCity={addCity} />
       <button onClick={handleAdminLogin}>Login to Admin</button>
-      <SelectInput/>
+      {/* <SelectInput/> */}
     </div>
   );
 }
