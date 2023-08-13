@@ -50,6 +50,12 @@ function Home() {
   return (
     <div className="App">
       {/* <h1>World Clock</h1> */}
+      <div class="container">
+  <h1>
+    <a href="https://8081-cecdcfabfcfbbebebbccccebcfdeeedfbacfe.premiumproject.examly.io/admin-login" class="btn btn-primary pull-right">Admin</a>
+  </h1>
+</div>
+
       <ClockList cities={cities} removeCity={removeCity} />
       {/* <AddCityForm addCity={addCity} /> */}
       {/* <button onClick={handleAdminLogin}>Login to Admin</button> */}
