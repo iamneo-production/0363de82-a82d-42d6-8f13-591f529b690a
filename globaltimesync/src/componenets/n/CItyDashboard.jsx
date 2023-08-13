@@ -3,10 +3,12 @@ import axios from 'axios';
 import moment from 'moment-timezone';
 import cityService from '../../services/API';
 import './city.css';
+import { useNavigate } from 'react-router';
 const CityDashboard = ({ apiUrl }) => {
   const [cities, setCities] = useState([]);
   const [newCityName, setNewCityName] = useState('');
   const [newCityTimezone, setNewCityTimezone] = useState('');
+  const navigate=useNavigate();
   // Fetch cities from API on component mount
   useEffect(() => {
     const fetchCities = async () => {
@@ -24,7 +26,7 @@ const CityDashboard = ({ apiUrl }) => {
   const handleNewCityNameChange = (event) => {
     setNewCityName(event.target.value);
   };
-
+  
   // Handle new city timezone change
   const handleNewCityTimezoneChange = (event) => {
     setNewCityTimezone(event.target.value);
@@ -54,9 +56,8 @@ const CityDashboard = ({ apiUrl }) => {
 
   return (
     <div className="container">
-      <h1 style={{color:"white",paddingTop:"100px"}}>CITY DASHBOARD</h1>
+     <h1 style={{color:"white",paddingTop:"100px"}}>CITY DASHBOARD</h1>
       <div className="mb-3">
-        <form>
         <label htmlFor="newCityName" className="form-label">
           City Name
         </label>
@@ -67,6 +68,8 @@ const CityDashboard = ({ apiUrl }) => {
           value={newCityName}
           onChange={handleNewCityNameChange}
         />
+      </div>
+      <div className="mb-3">
         <label htmlFor="newCityTimezone" className="form-label">
           City Timezone
         </label>
@@ -77,11 +80,10 @@ const CityDashboard = ({ apiUrl }) => {
           value={newCityTimezone}
           onChange={handleNewCityTimezoneChange}
         />
-     <button className="btn btn-primary" onClick={handleAddCity}>
-        ADD CITY
-      </button>
-      </form>
       </div>
+      <button className="btn btn-primary" onClick={handleAddCity}>
+        Add City
+      </button>
       <table className="table table-hover table-light">
         <thead>
         <tr class="table-active">
@@ -109,9 +111,9 @@ const CityDashboard = ({ apiUrl }) => {
           ))}
         </tbody>
       </table>
-      
+<div class='test'><button className="btn btn-danger" onClick={() => navigate("/admin-login")}>LogOff
+</button></div>
     </div>
   );
 };
-
 export default CityDashboard;
