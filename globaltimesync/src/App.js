@@ -5,6 +5,7 @@ import AdminLogin from './componenets/AdminLogin';
 import SystemAdminPage from './componenets/SystemAdminPage';
 import { CityProvider } from './componenets/contextapi/CityProvider';
 import CityDashboard from './componenets/n/CItyDashboard';
+import CitySearch from './componenets/CitySearch'
 
 function App() {
   
@@ -17,7 +18,8 @@ function App() {
         <Route path="admin-login" element={<AdminLogin/>}/>
         <Route path="system-admin" element={<SystemAdminPage/>}/>
         <Route path="/admin" element={<CityDashboard/>}/>
-        
+        <Route path= '/search' element= {<CitySearch/>}/>
+
       </Routes>
       </CityProvider>
     </div>

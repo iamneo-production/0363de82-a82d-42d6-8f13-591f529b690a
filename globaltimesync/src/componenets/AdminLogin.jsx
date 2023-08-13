@@ -19,7 +19,7 @@ function AdminLogin() {
     if (username === mockAdminCredentials.username && password === mockAdminCredentials.password) {
       setIsAdmin(true);
       setErrorMessage('');
-      navigate('/system-admin');
+      navigate('/admin');
     } else {
       setIsAdmin(false);
       setErrorMessage('Invalid credentials. Please try again.');

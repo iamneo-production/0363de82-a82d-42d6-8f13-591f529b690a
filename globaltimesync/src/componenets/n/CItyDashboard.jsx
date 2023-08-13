@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import moment from 'moment-timezone';
 import cityService from '../../services/API';
+import CitySearch from '../CitySearch';
 
 const CityDashboard = ({ apiUrl }) => {
   const [cities, setCities] = useState([]);
@@ -50,12 +51,14 @@ const CityDashboard = ({ apiUrl }) => {
   // Handle delete city
   const handleDeleteCity = (cityId) => {
     setCities((prevCities) => prevCities.filter((city) => city.id !== cityId));
-    console.log(cityService.deleteCity(cityId));
+    console.log(cityService.deleteAdminCity(cityId));
   };
 
   return (
     <div className="container">
       <h1>City Dashboard</h1>
+      <CitySearch addCity={handleAddCity} />
+
       <div className="mb-3">
         <label htmlFor="newCityName" className="form-label">
           City Name
