@@ -50,6 +50,7 @@ const CityDashboard = ({ apiUrl }) => {
   // Handle delete city
   const handleDeleteCity = (cityId) => {
     setCities((prevCities) => prevCities.filter((city) => city.id !== cityId));
+    console.log(cityService.deleteCity(cityId));
   };
 
   return (
