@@ -49,10 +49,10 @@ function Home() {
 
   return (
     <div className="App">
-      <h1>World Clock</h1>
+      {/* <h1>World Clock</h1> */}
       <ClockList cities={cities} removeCity={removeCity} />
       {/* <AddCityForm addCity={addCity} /> */}
-      <button onClick={handleAdminLogin}>Login to Admin</button>
+      {/* <button onClick={handleAdminLogin}>Login to Admin</button> */}
       {/* <SelectInput/> */}
       <CitySearch addCity={addCity} />
     </div>

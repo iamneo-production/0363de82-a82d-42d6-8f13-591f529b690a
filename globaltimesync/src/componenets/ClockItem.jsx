@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import moment from 'moment-timezone';
 import { useCityContext } from './contextapi/CityProvider';
@@ -22,10 +23,14 @@ function ClockItem({ city, removeCity }) {
   }, [city.timezone]);
 
   return (
-    <div className="clock-item">
-      <h2>{city.name}</h2>
-      <p>{currentTime}</p>
-      <button onClick={() => removeCity(city.id)}>Remove</button>
+    <div className="card mb-3">
+      <div className="card-body">
+        <h5 className="card-title">{city.name}</h5>
+        <h6 className="card-subtitle mb-2 text-muted">{currentTime}</h6>
+        <button className="btn btn-danger" onClick={() => removeCity(city.id)}>
+          Remove
+        </button>
+      </div>
     </div>
   );
 }

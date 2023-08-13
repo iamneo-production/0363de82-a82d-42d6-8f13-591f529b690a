@@ -19,6 +19,16 @@
       "id": 364,
       "name": "Sydney",
       "timezone": "Australia/Sydney"
+    },
+    {
+      "id": 48,
+      "name": "Porto-Novo",
+      "timezone": "Africa/Porto-Novo"
+    },
+    {
+      "id": 49,
+      "name": "Sao_Tome",
+      "timezone": "Africa/Sao_Tome"
     }
   ],
   "cities": [
