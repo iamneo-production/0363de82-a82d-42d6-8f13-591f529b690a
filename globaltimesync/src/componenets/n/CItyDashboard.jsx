@@ -55,33 +55,6 @@ const CityDashboard = ({ apiUrl }) => {
   return (
     <div className="container">
       <h1>City Dashboard</h1>
-      <table className="table">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Time</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {cities.map((city) => (
-            <tr key={city.id}>
-              <td>{city.id}</td>
-              <td>{city.name}</td>
-              <td>{moment().tz(city.timezone).format('hh:mm:ss A')}</td>
-              <td>
-                <button
-                  className="btn btn-danger"
-                  onClick={() => handleDeleteCity(city.id)}
-                >
-                  Delete
-                </button>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
       <div className="mb-3">
         <label htmlFor="newCityName" className="form-label">
           City Name
@@ -109,6 +82,34 @@ const CityDashboard = ({ apiUrl }) => {
       <button className="btn btn-primary" onClick={handleAddCity}>
         Add City
       </button>
+      <table className="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Time</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {cities.map((city) => (
+            <tr key={city.id}>
+              <td>{city.id}</td>
+              <td>{city.name}</td>
+              <td>{moment().tz(city.timezone).format('hh:mm:ss A')}</td>
+              <td>
+                <button
+                  className="btn btn-danger"
+                  onClick={() => handleDeleteCity(city.id)}
+                >
+                  Delete
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      
     </div>
   );
 };

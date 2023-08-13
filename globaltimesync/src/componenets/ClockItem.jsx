@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import moment from 'moment-timezone';
 import { useCityContext } from './contextapi/CityProvider';
-import { useCityContext } from './contextapi/CityProvider';
+// import { useCityContext } from './contextapi/CityProvider';
 
 function ClockItem({ city, removeCity }) {
   const [currentTime, setCurrentTime] = useState('');
