@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import ClockList from './ClockList';
 import AddCityForm from './AddCityForm';
 import { useNavigate } from 'react-router-dom';
+import Button from '@mui/material/Button';
 import { useCityContext } from './contextapi/CityProvider';
 import cityService from '../../src/services/API';
 import SelectInput from './SelectInput';
@@ -12,6 +13,12 @@ function Home() {
   const [cities, setCities] = useState([
     { id: 1, name: 'New York', timezone: 'America/New_York' },
     { id: 2, name: 'London', timezone: 'Europe/London' },
+    { id: 3, name: 'Budapest', timezone: 'Europe/Budapest' },
+    { id: 4, name: 'Calcutta', timezone: 'Asia/Calcutta' },
+    { id: 5, name: 'Seoul', timezone: 'Asia/Seoul' },
+    { id: 6, name: 'Dublin', timezone: 'Europe/Dublin' },
+    { id: 7, name: 'Costa_Rica', timezone: 'America/Costa_Rica' },
+    { id: 8, name: 'Istanbul', timezone: 'Asia/Istanbul' }
     // We can add more initial cities here
   ]);
   console.log('Home COM is rendering with cities:', cities);
@@ -39,10 +46,12 @@ function Home() {
 
   return (
     <div className="App">
-      <h1>World Clock</h1>
-      <ClockList cities={cities} removeCity={removeCity} />
+      <h1 style={{color:"white"}}>World Clock</h1>
+      <br></br>
+      <Button variant="contained" onClick={handleAdminLogin}>Admin Login</Button>
       <AddCityForm addCity={addCity} />
-      <button onClick={handleAdminLogin}>Login to Admin</button>
+      <br></br>
+      <ClockList cities={cities} removeCity={removeCity} />
       {/* <SelectInput/> */}
     </div>
   );

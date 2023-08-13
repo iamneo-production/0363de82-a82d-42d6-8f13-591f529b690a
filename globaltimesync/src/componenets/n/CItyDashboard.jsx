@@ -1,12 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import moment from 'moment-timezone';
-import cityService from '../../services/API';
+import React, { useState, useEffect } from "react";
+//import axios from 'axios';
+import moment from "moment-timezone";
+import cityService from "../../services/API";
+import { useNavigate } from "react-router";
+import '...App.css'
 
 const CityDashboard = ({ apiUrl }) => {
   const [cities, setCities] = useState([]);
-  const [newCityName, setNewCityName] = useState('');
-  const [newCityTimezone, setNewCityTimezone] = useState('');
+  const [newCityName, setNewCityName] = useState("");
+  const [newCityTimezone, setNewCityTimezone] = useState("");
+  const navigate = useNavigate();
 
   // Fetch cities from API on component mount
   useEffect(() => {
@@ -42,8 +45,8 @@ const CityDashboard = ({ apiUrl }) => {
           timezone: newCityTimezone,
         },
       ]);
-      setNewCityName('');
-      setNewCityTimezone('');
+      setNewCityName("");
+      setNewCityTimezone("");
     }
   };
 
@@ -54,8 +57,20 @@ const CityDashboard = ({ apiUrl }) => {
   };
 
   return (
-    <div className="container">
-      <h1>City Dashboard</h1>
+    <div className="container db">
+      <div className="row align-items-center justify-content-between mb-4">
+        <div className="col">
+          <h1 className="text-center">City Dashboard</h1>
+        </div>
+        <div className="col-auto">
+          <button
+            className="btn btn-danger"
+            onClick={() => navigate("/admin-login")}
+          >
+            LogOff
+          </button>
+        </div>
+      </div>
       <div className="mb-3">
         <label htmlFor="newCityName" className="form-label">
           City Name
@@ -97,7 +112,7 @@ const CityDashboard = ({ apiUrl }) => {
             <tr key={city.id}>
               <td>{city.id}</td>
               <td>{city.name}</td>
-              <td>{moment().tz(city.timezone).format('hh:mm:ss A')}</td>
+              <td>{moment().tz(city.timezone).format("hh:mm:ss A")}</td>
               <td>
                 <button
                   className="btn btn-danger"
@@ -110,7 +125,6 @@ const CityDashboard = ({ apiUrl }) => {
           ))}
         </tbody>
       </table>
-      
     </div>
   );
 };

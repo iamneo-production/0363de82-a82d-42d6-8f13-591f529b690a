@@ -16,7 +16,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="admin-login" element={<AdminLogin/>}/>
         <Route path="system-admin" element={<SystemAdminPage/>}/>
-        <Route path="/admin" element={<CityDashboard/>}/>
+        <Route path="admin" element={<CityDashboard/>}/>
         
       </Routes>
       </CityProvider>
